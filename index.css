@@ -1,0 +1,257 @@
+@font-face{
+    font-family: lato;
+    src: url(./fonts/Lato-Bold.ttf);
+}
+
+@font-face{
+    font-family: lato-regular;
+    src: url(./fonts/Lato-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "lato";
+}
+
+.header {
+    background-color: #f8d66e;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.ul-nav {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 25%;
+    align-items: center;
+}
+
+.logo-nav {
+    width: 20%;
+    height: auto;
+    object-fit: none;
+}
+
+.li-nav {
+    color: #0c4ea2;
+    font-weight: 700;
+    
+    font-size: 1.3em;
+}
+
+.li-nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.li-nav a:hover {
+    color: black;
+    border-bottom: 5px solid black;
+}
+
+.carrito {
+    margin-left: 20px;
+}
+
+.carrito:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.contenedor-header {
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-pedimonya {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-pikachu-img {
+    margin-left: 10%;
+    width: 20%;
+}
+
+.pikachu-img {
+    width: 100%;
+}
+
+.pikachu-img:hover {
+    filter: contrast(200%);
+    transform: scale(1.5);
+}
+
+.info-pedimonya h3 {
+    font-family: "lato-regular";
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+.img-pedimon:hover {
+    filter: blur(2px);
+}
+
+.btn-atrapar {
+   
+    height: 50px;
+    background-color: #0c4ea2;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    padding: 10px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.btn-atrapar:hover {
+    background-color: black;
+    color: #f8d66e;
+}
+
+.about {
+    background-color: #0c4ea2;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-about {
+    color: #f8d66e;
+    text-transform: uppercase;
+    font-size: 5rem;
+    }
+
+.p-about {
+        color: white;
+        font-size: 1.5rem;
+    }
+
+.conteiner-caracteristicas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6%;
+}
+
+.conteiner-caracteristica {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-caracteristica img {
+    width: 30%;
+}
+
+.conteiner-caracteristica p {
+    color: white;
+    font-size: 1.8rem;
+    margin-top: 50px;
+    font-family: "lato-regular";
+    text-align: center;
+    font-weight: 100;
+}
+
+@media (max-width: 1700px) and (min-width: 1346px) {
+    .ul-nav {
+        width: 40%;
+    }
+    
+}
+
+@media (max-width: 1345px) and (min-width: 700px) {
+    .ul-nav {
+        width: 70%;
+        justify-content: space-around;
+    }
+
+    .logo-nav {
+        width: 40%;
+    }
+
+    .info-pedimonya {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .info-pedimonya h3 {
+        text-align: center;
+        margin: 20px 0px;
+        font-size: 1.5rem;
+    }
+
+    .btn-atrapar {
+        margin-top: 20px;
+    }
+
+    .contenedor-pikachu-img {
+        display: none;
+    }
+
+    .title-about {
+        font-size: 3rem;
+        margin-top: 30px;
+    }
+
+    .p-about {
+        font-size: 1.3rem;
+    }
+
+    .about {
+         height: 100vh ;
+    }
+
+    .conteiner-caracteristicas {
+        margin: 0px;
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .conteiner-caracteristica {
+        justify-content: space-around;
+        margin-top: 10%;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .conteiner-caracteristica img {
+        width: 10%;
+    }
+
+    .conteiner-caracteristica p {
+        margin: 0px;
+        width: 60%;
+    }
+}
+
+
+/* 1372 x 1140 */
